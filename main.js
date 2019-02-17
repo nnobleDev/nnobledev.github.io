@@ -212,7 +212,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var AuthenticationService = /** @class */ (function () {
     function AuthenticationService(http) {
         this.http = http;
-        this.URL_API = 'http://localhost:3000/api/user/signin';
+        this.URL_API = 'https://api-domino.herokuapp.com/api/user/signin';
     }
     AuthenticationService.prototype.login = function (email, password) {
         var User = {

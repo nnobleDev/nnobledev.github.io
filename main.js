@@ -344,6 +344,7 @@ var AgendaComponent = /** @class */ (function () {
     AgendaComponent.prototype.ngOnInit = function () {
     };
     AgendaComponent.prototype.agenda = function (form) {
+        M.toast({ html: 'Espere a que se procese el formulario' });
         console.log(form.value);
         this.agendaService.postAgenda(form.value)
             .subscribe(function (res) {

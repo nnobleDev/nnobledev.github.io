@@ -345,6 +345,7 @@ var AgendaComponent = /** @class */ (function () {
     };
     AgendaComponent.prototype.agenda = function (form) {
         M.toast({ html: 'Espere a que se procese el formulario' });
+        M.toast({ html: 'Procesando....' });
         console.log(form.value);
         this.agendaService.postAgenda(form.value)
             .subscribe(function (res) {

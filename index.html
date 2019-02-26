@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=KoHo|Nanum+Myeongjo" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="./assets/5491triskel_sm.ico">
-  <script src="app/funciones.js"></script>
+  <script src="../src/app/funciones.js"></script>
   <style>
     body{
       font-family: 'KoHo', sans-serif;
@@ -26,7 +26,11 @@
       </div>
   </app-root>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  
   <script>
+      $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
       $(document).ready(function(){
         $('.modal').modal();
       });
